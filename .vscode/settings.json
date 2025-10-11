@@ -7,6 +7,7 @@
     "out/**": true,
     "**/*.pem": true,
     "**/*.tsbuildinfo": true,
+    ".eslintcache": true,
     "next-env.d.ts": true,
     "npm-debug.log*": true
   },
