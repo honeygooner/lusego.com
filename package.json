@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "license": "AGPL-3.0-only",
   "repository": "github:honeygooner/lusego.com",
+  "scripts": {
+    "format": "prettier --cache --write ."
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  },
   "devEngines": {
     "packageManager": {
       "name": "npm",
