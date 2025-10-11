@@ -6,6 +6,10 @@
     "node_modules/**": true,
     "out/**": true,
     "**/*.pem": true,
+    "**/*.tsbuildinfo": true,
+    "next-env.d.ts": true,
     "npm-debug.log*": true
-  }
+  },
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
