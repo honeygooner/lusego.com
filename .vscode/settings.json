@@ -2,7 +2,10 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "files.readonlyInclude": {
+    ".next/**": true,
     "node_modules/**": true,
+    "out/**": true,
+    "**/*.pem": true,
     "npm-debug.log*": true
   }
 }
