@@ -4,6 +4,9 @@
   "license": "AGPL-3.0-only",
   "repository": "github:honeygooner/lusego.com",
   "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --cache --write ."
   },
   "dependencies": {
