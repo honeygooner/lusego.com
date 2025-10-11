@@ -1,0 +1,17 @@
+{
+  "name": "lusego.com",
+  "version": "0.1.0",
+  "license": "AGPL-3.0-only",
+  "repository": "github:honeygooner/lusego.com",
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": ">= 10.9.0"
+    },
+    "runtime": {
+      "name": "node",
+      "version": "^20"
+    }
+  },
+  "private": true
+}
