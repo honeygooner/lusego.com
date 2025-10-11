@@ -1,0 +1,14 @@
+# learn more: https://help.github.com/articles/ignoring-files
+
+# dependencies
+node_modules/
+
+# environment
+.env*.local
+
+# logs
+*.log
+npm-debug.log*
+
+# miscellaneous
+.DS_Store
