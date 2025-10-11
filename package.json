@@ -4,7 +4,15 @@
   "license": "AGPL-3.0-only",
   "repository": "github:honeygooner/lusego.com",
   "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --cache --write ."
+  },
+  "dependencies": {
+    "next": "15.5.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
     "prettier": "3.6.2"
