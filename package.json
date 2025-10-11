@@ -15,7 +15,6 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
-    "@tsconfig/next": "^2.0.3",
     "@types/node": "^20.19.20",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.1",
