@@ -1,13 +1,11 @@
-import { fixupConfigRules, includeIgnoreFile } from "@eslint/compat";
-import { defineConfig } from "eslint/config";
-import coreWebVitals from "eslint-config-next/core-web-vitals";
-import typescript from "eslint-config-next/typescript";
-import prettier from "eslint-config-prettier";
-import { fileURLToPath } from "node:url";
+import { FlatCompat } from "@eslint/eslintrc";
+import { defineConfig, globalIgnores } from "eslint/config";
 
-const gitignorePath = fileURLToPath(new URL(".gitignore", import.meta.url));
+const compat = new FlatCompat({
+  baseDirectory: import.meta.dirname,
+});
 
 export default defineConfig([
-  includeIgnoreFile(gitignorePath),
-  ...fixupConfigRules([coreWebVitals, typescript, prettier]),
+  ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
+  globalIgnores([".next/", "node_modules/", "out/", "next-env.d.ts"]),
 ]);
