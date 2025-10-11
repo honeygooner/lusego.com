@@ -1,4 +1,7 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "files.readonlyInclude": {
@@ -7,6 +10,7 @@
     "out/**": true,
     "**/*.pem": true,
     "**/*.tsbuildinfo": true,
+    ".eslintcache": true,
     "next-env.d.ts": true,
     "npm-debug.log*": true
   },
