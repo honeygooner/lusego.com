@@ -7,7 +7,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --cache --write ."
+    "format": "prettier --cache --write .",
+    "lint": "eslint --cache"
   },
   "dependencies": {
     "next": "15.5.4",
