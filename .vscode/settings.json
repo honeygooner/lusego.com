@@ -8,6 +8,8 @@
     ".next/**": true,
     "node_modules/**": true,
     "out/**": true,
+    "public/sw*": true,
+    "public/swe-worker*": true,
     "**/*.pem": true,
     "**/*.tsbuildinfo": true,
     ".eslintcache": true,
