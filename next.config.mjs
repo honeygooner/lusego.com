@@ -6,6 +6,22 @@ import {
 /** @type {import("next").NextConfig} */
 const config = {
   typedRoutes: true,
+  /** @param {import("webpack").Configuration} config */
+  webpack: (config) => {
+    config.module?.rules?.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/i,
+      use: [
+        {
+          loader: "@svgr/webpack",
+          options: {
+            icon: true,
+          },
+        },
+      ],
+    });
+    return config;
+  },
 };
 
 /** @param {string} phase */
