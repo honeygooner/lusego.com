@@ -16,6 +16,13 @@
     "next-env.d.ts": true,
     "npm-debug.log*": true
   },
+  "json.schemas": [
+    // see: https://nextjs.org/docs/app/api-reference/file-conventions/metadata/manifest
+    {
+      "fileMatch": ["app/manifest.{json,webmanifest}"],
+      "url": "https://json.schemastore.org/web-manifest-combined.json",
+    }
+  ],
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.tsdk": "node_modules/typescript/lib"
 }

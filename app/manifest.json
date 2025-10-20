@@ -1,6 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-
   "name": "lusego",
   "icons": [
     {
